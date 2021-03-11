@@ -1,7 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #edf0f1;
+}
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 2rem;
+
 }
+
+/* nav {
+    position: relative;
+    display: flex;
+    width: 640px;
+
+} */
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #24252A;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    height: 86px;
+    width: 98px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+   color: #777;
+
+}
+
+button {
+   padding: 9px 25px;
+   background-color: rgba(119, 119, 119, 1);
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+   margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgba(119, 119, 119, 0.5);
+}
+/* nav a{
+    display: block;
+    width: 34%;
+    padding: .65rem 0;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nav_underline, .nav_underline2 {
+    position: absolute;
+    left:0;
+    bottom: -1px;
+    width: 18%;
+    height: 2px;
+    background: green;
+    transition: all .3s ease-in-out;
+}
+
+.nav_underline2 {
+    top: -1px !important;
+}
+
+nav a:hover {
+    font-size: 20px;
+    font-weight: 900;
+    transition: font-size .1s linear,
+                font-weight .1s linear;
+    color: yellow;
+} */
 
 .banner{
     margin-top: 2rem;

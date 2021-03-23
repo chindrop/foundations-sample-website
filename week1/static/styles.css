@@ -2,31 +2,44 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #edf0f1;
 }
-body {
+
+html {
+    font-size: 65%;
+    height: auto;
+}
+
+html, body {
+    overflow: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-/* nav {
-    position: relative;
-    display: flex;
-    width: 640px;
-
-} */
-
 li, a, button {
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 17px;
     color: #24252A;
     text-decoration: none;
+    font-style: normal;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0px 0 rgba(0, 0, 0, 0.4);
+    height: 65px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+nav {
+
 }
 
 .logo {
@@ -34,15 +47,21 @@ header {
     width: 98px;
     cursor: pointer;
     margin-right: auto;
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .nav_links {
     list-style: none;
+    text-decoration: none;
+
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 12px 32px;
 }
 
 .nav_links li a {
@@ -56,47 +75,18 @@ header {
 
 button {
    padding: 9px 25px;
-   background-color: rgba(119, 119, 119, 1);
+   background-color: rgb(218, 211, 211);
    border: none;
    border-radius: 50px;
    cursor: pointer;
    transition: all 0.3s ease 0s;
    margin-left: 20px;
+   margin-right: 10px;
 }
 
 button:hover {
-    background-color: rgba(119, 119, 119, 0.5);
+    background-color: rgba(230, 218, 218, 0.5);
 }
-/* nav a{
-    display: block;
-    width: 34%;
-    padding: .65rem 0;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.nav_underline, .nav_underline2 {
-    position: absolute;
-    left:0;
-    bottom: -1px;
-    width: 18%;
-    height: 2px;
-    background: green;
-    transition: all .3s ease-in-out;
-}
-
-.nav_underline2 {
-    top: -1px !important;
-}
-
-nav a:hover {
-    font-size: 20px;
-    font-weight: 900;
-    transition: font-size .1s linear,
-                font-weight .1s linear;
-    color: yellow;
-} */
 
 .banner{
     margin-top: 2rem;
@@ -107,4 +97,10 @@ nav a:hover {
 footer{
     margin-top: 5rem;
     text-align: center;
+}
+
+.back_image {
+    background-image: url(banner.jpg);
+    height: 152vh;
+    background-size: cover;
 }
